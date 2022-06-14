@@ -1,0 +1,13 @@
+server:
+   port: 8005
+spring:
+ application:
+   name: recovery
+ datasource:
+   username: root
+   password: root
+   url: jdbc:mysql://localhost:3306/note?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+   driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+ pattern:
+   console: '%date %clr(%level){green} [%thread] %logger{10} [%line]  [%clr(%X{trace_log}){yellow}] - %msg%n'
